@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("https://source.unsplash.com/1600x900/?kolkata");
+  background-size: auto;
+  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.card {
+  height: 300px;
+  max-width: 600px;
+  color: aliceblue;
+  background-color: #979494c4 ;
+  padding: 30px 25px;
+  border-radius: 10px;
+}
+
+.title {
+  margin-bottom: 5%;
+}
+
+#searchBar {
+  border: none;
+  width: 70%;
+  height: 30px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: rgba(7, 7, 7, 0.753);
+  color: #fff;
+  margin:0 2% 8% 0;
+
+}
+#searchbtn{
+    border: none;
+    width: 26%;
+    height: 30px;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: rgba(252, 153, 5, 0.911);
+    color: #fff;
+}
+
+.weather {
+  visibility: visible;
+}
+.weather.loading {
+  visibility: hidden;
+  max-height: 10px;
+  position: relative;
+}
+.weather.loading:after {
+  visibility: visible;
+  content: "loading...";
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+.weather .wrapperTop {
+  display: flex;
+  justify-content:space-around;
+  align-items:flex-start;
+}
+
+.weather .icon {
+  width: 4rem;
+}
+
+.weather h1 {
+  font-size: 4rem;
+}
+
+.weather hr {
+  margin-bottom: 2%;
+}
+.weather h3 {
+  color: rgb(236, 233, 233);
+}
+.weather p {
+  color: rgb(236, 233, 233);
+}
+.weather .country{
+  text-transform:capitalize;
+}
+footer {
+  position:absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  
+}
+
+@media screen and (max-width: 600px) {
+  .card{
+    max-width: 90vw;
+    overflow: hidden;
+  }
+  .weather .wrapperTop {
+    display: flex;
+  }
+  .weather h1 {
+    font-size: 3rem;
+  }
+  .weather hr {
+    margin-bottom: 5%;
+  }
+}

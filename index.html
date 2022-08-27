@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app | JS | Vin</title>
+    <!-- JQuery cdn -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- weather icons cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css"
+      integrity="sha512-r/Gan7PMSRovDus++vDS2Ayutc/cSdl268u047n4z+k7GYuR7Hiw71FsT3QQxdKJBVHYttOJ6IGLnlM9IoMToQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- local css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h2 class="title">Weather today</h2>
+        <!-- Get city name  -->
+        <div class="search">
+          <form>
+            <input type="text" id="searchBar" placeholder="Enter city name" />
+            <input type="submit" value="submit" id="searchbtn" />
+          </form>
+        </div>
+
+        <!-- Show weather report  -->
+        <div class="weather loading">
+          <div class="wrapperTop">
+            <img src="#" alt="icon.png" class="icon" />
+            <h1 class="temp">31c</h1>
+            <div>
+              <p class="humidity">Humidity: 76%</p>
+              <p class="wind">Wind: 6 km/h</p>
+            </div>
+          </div>
+          <hr />
+          <h2>
+            <span class="city">Mumbai </span><span class="country">In</span>
+          </h2>
+          <h3 class="description">Sunny day</h3>
+
+        </div>
+      </div>
+      <footer>
+        <p> &copy; 2022 Copyright | v i n</p>
+      </footer>
+    </div>
+
+
+    <!-- local JS -->
+    <script src="main.js"></script>
+  </body>
+</html>
